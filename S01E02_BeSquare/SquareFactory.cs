@@ -27,7 +27,7 @@ namespace S01E02_BeSquare
                     var xStart = xIndex * SquareSize;
                     var yStart = yIndex * SquareSize;
 
-                    // This square starts at (x, y) coordinates in the material and is up to SquareSize big.
+                    // This square starts at (xStart, ySTart) coordinates in the material and is up to SquareSize big.
                     // If we are at the edges of the material, it might be smaller (if we have not enough material).
                     // Here we calculate the correct size of the material that will make this square.
                     var remainingWidth = width - xStart;
