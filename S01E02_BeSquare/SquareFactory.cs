@@ -24,14 +24,14 @@ namespace S01E02_BeSquare
             for (var xIndex = 0; xIndex < horizontalPieces; xIndex++)
                 for (var yIndex = 0; yIndex < verticalPieces; yIndex++)
                 {
-                    var x = xIndex * SquareSize;
-                    var y = yIndex * SquareSize;
+                    var xStart = xIndex * SquareSize;
+                    var yStart = yIndex * SquareSize;
 
                     // This square starts at (x, y) coordinates in the material and is up to SquareSize big.
                     // If we are at the edges of the material, it might be smaller (if we have not enough material).
                     // Here we calculate the correct size of the material that will make this square.
-                    var remainingWidth = width - xIndex * SquareSize;
-                    var remainingHeight = height - yIndex * SquareSize;
+                    var remainingWidth = width - xStart;
+                    var remainingHeight = height - yStart;
 
                     var w = Math.Min(SquareSize, remainingWidth);
                     var h = Math.Min(SquareSize, remainingHeight);
