@@ -51,7 +51,7 @@ namespace Tests
         // Try with material of weird size.
         [DataRow(123, 123, 10)]
         // Try with too small material to make any squares.
-        [DataRow(10, 1, 1)]
+        [DataRow(10, 1, 10)]
         // And huge material.
         [DataRow(10000, 10000, 100)]
         public void AddMaterial_WithVariousSizes_CreatesSquaresOfExpectedSize(int materialWidth, int materialHeight, int squareSize)
