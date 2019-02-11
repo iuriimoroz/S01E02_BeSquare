@@ -18,8 +18,8 @@ namespace S01E02_BeSquare
             if (SquareSize <= 0)
                 throw new InvalidOperationException("The square factory will not work unless the square size is a positive integer.");
 
-            var horizontalPieces = (int)Math.Ceiling(1d * width / SquareSize);
-            var verticalPieces = (int)Math.Ceiling(1d * height / SquareSize);
+            var horizontalPieces = (int)Math.Floor(1d * width / SquareSize);
+            var verticalPieces = (int)Math.Floor(1d * height / SquareSize);
 
             for (var xIndex = 0; xIndex < horizontalPieces; xIndex++)
                 for (var yIndex = 0; yIndex < verticalPieces; yIndex++)

@@ -24,6 +24,9 @@ namespace S01E02_BeSquare
             }
 
             Console.WriteLine($"Created a total of {totalSquares} squares.");
+
+            Console.WriteLine("Press any key on your keyboard to close the screen...");
+            Console.ReadKey();
         }
     }
 }
